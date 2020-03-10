@@ -1,0 +1,111 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPRIMARY SCHOOL</title>
+    <style type="text/css">
+ body{
+     font-family: sans-serif;
+     margin: 20px 40px;
+      background-color: rgb(26, 105, 136);
+    
+    }
+ #mainbox{
+     font-size: 24px;
+     cursor: pointer;
+     transition: all .6s;
+ }
+ .sidemenu{
+     position: fixed;
+     top: 0px;
+     left: 0px;
+     height: 100%;
+     width: 0px;
+     background-color: #222;
+     z-index: 1;
+     padding-top: 100px;
+     overflow-x: hidden;
+     transition: all .5s;
+ }
+ div.continer{
+     marging: auto 0;
+     text-align: center;
+     color: rgb(7, 219, 78);
+     padding-top: 0px;
+     font-weight: 300; 
+    
+     
+ }
+ h1{
+     font-size: 40px;
+ }
+ h2{
+   color: rgb(131, 27, 53);  
+   font-size: 29px;
+   border: 
+   text-align: center;
+ }
+ .copyrigth{
+   margin-bottom: 0mm;
+   padding: 100px
+   
+
+ }
+.sidemenu a{
+    padding: 8px 8px 8px 64px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #999;
+    display: block;
+}
+.sidemenu a:hover{
+    color: white;
+}
+.sidemenu .closebtn{
+    position: absolute;
+    top: 0px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 32px;
+}
+</style>
+</head>
+<body>
+    
+<div class="continer">
+  <h1>Horn africa primary school</h1>
+  <h2>Waxaad ka Heli doonta wax kasto oo aad uga Bahan tahay dugsiga </h2>
+  <hr>
+  <P> LOOGA LOOGA</P>
+  <P>KAZJSK</P>
+<img src="" alt="">
+</div>
+ 
+    <div id="mainbox" onclick="openfunction()">&#9776; open</div>
+   <div id="menu" class="sidemenu">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+    <a href="#">Login</a>
+    <a href="#" class="closebtn" onclick="closefuction()">&times;</a>
+   <img src="Multimedia-and-Animation-Body-Images.jpg" alt=""> 
+    
+  </div>
+   
+
+    <script type="text/javascript">
+    function openfunction(){
+      document.getElementById("menu").style.width="300px";
+      document.getElementById("mainbox").style.marginleft="300px";
+      document.getElementById("mainbox").innerHTML="click on cross Element and close menu";
+      }
+      
+    function closefuction(){
+           document.getElementById("menu").style.width="0px";
+           document.getElementById("mainbox").style.marginLeft="0px";
+           document.getElementById("mainbox").innerHTML="&#7996; open";
+  }
+</script> 
+
+</body>
+</html>
